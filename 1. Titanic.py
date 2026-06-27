@@ -21,11 +21,9 @@ print("% of men who survived:", rate_men)
 
 ## Modelo 1:  Random Forest (modelo de classificação)
 
-from sklearn.ensemble import RandomForestClassifier
-
 y = train_data["Survived"]
-
 features = ["Pclass", "Sex", "SibSp", "Parch"]
+
 X = pd.get_dummies(train_data[features])
 X_test = pd.get_dummies(test_data[features])
 
